@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <MainLanding />
-      <SeasonContainer />
       <CardSection />
+      <SeasonContainer />
     </>
    )
       
