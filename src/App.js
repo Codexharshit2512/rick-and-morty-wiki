@@ -7,11 +7,10 @@ function App() {
   return (
     <>
       <MainLanding />
-      <SeasonContainer />
       <CardSection />
+      <SeasonContainer />
     </>
-   )
-      
+  );
 }
 
 export default App;
