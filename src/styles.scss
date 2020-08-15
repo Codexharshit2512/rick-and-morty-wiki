@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
-@import './styles/base/constants.scss';
-@import './styles/base/base.scss';
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import "./styles/base/constants.scss";
+@import "./styles/base/base.scss";
 
 /* main component */
-@import './styles/components/MainLanding/MainLanding.scss';
-@import './styles/components/MainLanding/TitleContainer.scss';
-@import './styles/components/MainLanding/HeadingContainer.scss';
+@import "./styles/components/MainLanding/MainLanding.scss";
+@import "./styles/components/MainLanding/TitleContainer.scss";
+@import "./styles/components/MainLanding/HeadingContainer.scss";
+@import "./styles/components/Characters/CardSection.scss";
+@import "./styles/components/Characters/Card.scss";
 /**/
