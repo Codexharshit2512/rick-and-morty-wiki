@@ -10,8 +10,7 @@ function App() {
       <CardSection />
       <SeasonContainer />
     </>
-   )
-      
+  );
 }
 
 export default App;
