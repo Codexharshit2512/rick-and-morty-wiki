@@ -1,0 +1,1 @@
+export const seasons=['Season 1','Season 2','Season 3','Season 4'];

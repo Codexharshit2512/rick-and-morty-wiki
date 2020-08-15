@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
-@import './styles/base/constants.scss';
+@import './styles/base/_constants.scss';
 @import './styles/base/base.scss';
 
 /* main component */
 @import './styles/components/MainLanding/MainLanding.scss';
 @import './styles/components/MainLanding/TitleContainer.scss';
 @import './styles/components/MainLanding/HeadingContainer.scss';
+@import './styles/components/MainLanding/SeasonContainer.scss';
 /**/
+
+
