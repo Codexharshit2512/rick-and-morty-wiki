@@ -6,15 +6,15 @@
 }
 
 .season-item-container{
-    height: 500px;
-    margin-top: 2rem;
+    margin-top: 5rem;
+    
 }
 
 .season-item{
-    perspective: 400px;
+    perspective: 100px;
     display: flex;
-    flex-direction: row;
-   
+    flex-direction: column;
+    height: 300px;
 }
 
 .season-item:hover .back{
@@ -33,6 +33,7 @@
     background-color: black;
     position: relative;
     z-index: 999;
+    text-align: center;
     
 }
 
@@ -53,8 +54,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform-origin: left;
-    transform: rotateY(90deg);
+    transform-origin: top;
+    transform: rotateX(-90deg);
     transition: transform 800ms ease-out,background-color 500ms ease-out;
 }
 
@@ -62,15 +63,17 @@
 
 .back:hover{
     background-color:rgba($color: #bdffff, $alpha: 1.0);
-    color: #444444;
 }
 
-.back span{
+.back a{
     transform: rotate(0);
     transition: transform 300ms ease-in;
+    color:#d3d3d3;
+    text-decoration: none;
 }
 
-.back:hover span{
+.back:hover a{
+    color: #444444;
     transform: rotateZ(360deg);
 }
 
