@@ -8,13 +8,14 @@ const CardSection = () => (
       Characters
     </h1>
     <div className="characters">
-      <div class="row">
+      <div className="row">
         {character.map((char) => (
-          <div class="col-sm">
+          <div className="col-sm">
             <Card
               title={char.name}
               description={char.description}
               image={char.image}
+              key={char.name}
             />
           </div>
         ))}
