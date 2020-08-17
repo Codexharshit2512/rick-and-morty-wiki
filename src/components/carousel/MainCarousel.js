@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import {quotes} from './quotes';
-// import CarouselSlide from './CarouselSlide';
 import {Carousel,CarouselIndicators,CarouselControl,CarouselCaption,CarouselItem} from 'reactstrap';
 
 
@@ -35,8 +34,8 @@ const MainCarousel=() => {
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
               >
-                <img src={quote.image} alt='image' />
-                <CarouselCaption captionText={quote.quote} captionHeader={quote.quote} />
+                <img className="carousel-img" src={quote.image} alt='image' width="800" height="500" />
+                <CarouselCaption  captionHeader={quote.quote} />
               </CarouselItem>
         ));
         
@@ -44,11 +43,13 @@ const MainCarousel=() => {
     
     return(
         <div className="main-carousel">
+            <h3 className="display-4">Quotes</h3>
             <div className="carousel-container">
                 <Carousel
                     activeIndex={activeIndex}
                     next={next}
                     previous={previous}
+                    interval='3000'
                 >
                 <CarouselIndicators items={quotes} activeIndex={activeIndex} onClickHandler={goToIndex} />
                     {slides}

@@ -1,13 +1,15 @@
+import bg from '../../images/bg.png'
+
 export const quotes=[{
     quote:'Quote 1',
-    image:'../../images/morty.jpg'
+    image: bg
 },{
     quote:'Quote 2',
-    image:'../../images/morty.jpg'
+    image: bg
 },{
     quote:'Quote 3',
-    image:'../../images/morty.jpg'
+    image: bg
 },{
     quote:'Quote 4',
-    image:'../../images/morty.jpg'
+    image: bg
 }]
