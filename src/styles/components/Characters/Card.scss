@@ -2,6 +2,9 @@
   color: grey;
   height: 70vh;
   margin: 0 20px 0 20px;
+  @media (max-width: $desktop-breakpoint) {
+    margin: 5vh 0;
+  }
 }
 
 .card-img-top {
