@@ -9,8 +9,8 @@ function App() {
     <>
       <MainLanding />
       <CardSection />
-      {/* <SeasonContainer /> */}
-      {/* <MainCarousel /> */}
+      <SeasonContainer />
+      <MainCarousel />
     </>
   );
 }

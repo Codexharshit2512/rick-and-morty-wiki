@@ -3,6 +3,10 @@
     width: 100vw;
     background-color:$brandColor;
     font-family: 'Pangolin',cursive;
+
+    @media (max-width:$desktop-breakpoint){
+        height: 130vh;
+    }
 }
 
 .season-item-container{

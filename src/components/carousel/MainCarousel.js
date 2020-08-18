@@ -39,8 +39,6 @@ const MainCarousel = () => {
         className="carousel-img"
         src={quote.image}
         alt="image"
-        width="800"
-        height="500"
       />
       <CarouselCaption captionHeader={quote.quote} />
     </CarouselItem>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Season = (props) => (
-  <div className="season-item col-md-2">
+  <div className="season-item col-md-2 col-5">
     <div className="front">
       <h3>{props.season}</h3>
     </div>
