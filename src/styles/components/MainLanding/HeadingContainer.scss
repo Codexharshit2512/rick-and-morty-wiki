@@ -5,7 +5,10 @@
 }
 
 .texting {
-  font-family: "Pangolin", cursive;
+  font-family: "Pangolin", cursive, sans-serif;
   color: white;
   font-size: 35px;
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 18px;
+  }
 }

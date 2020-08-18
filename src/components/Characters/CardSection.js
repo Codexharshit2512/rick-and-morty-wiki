@@ -4,13 +4,16 @@ import character from "./character";
 
 const CardSection = () => (
   <div className="container">
-    <h1 className="display-4 text-center" style={{ color: "white" }}>
-      Characters
+    <h1
+      className="display-4 text-center"
+      style={{ color: "white", marginTop: 20 }}
+    >
+      Starring
     </h1>
     <div className="characters">
-      <div class="row">
+      <div className="row">
         {character.map((char) => (
-          <div class="col-sm">
+          <div className="col-sm" key={char.name}>
             <Card
               title={char.name}
               description={char.description}

@@ -1,16 +1,7 @@
-import React from "react";
-import MainLanding from "./components/MainLanding/MainLanding";
-import SeasonContainer from "./components/seasons/SeasonContainer";
+import routes from "./router/router";
 
-import CardSection from "./components/Characters/CardSection";
 function App() {
-  return (
-    <>
-      <MainLanding />
-      <CardSection />
-      <SeasonContainer />
-    </>
-  );
+  return routes;
 }
 
 export default App;
