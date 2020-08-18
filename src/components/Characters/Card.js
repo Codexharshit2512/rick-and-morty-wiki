@@ -1,7 +1,7 @@
 import React from "react";
 
 const Card = (props) => (
-  <div class="card">
+  <div class="card bg-dark">
     <img class="card-img-top" src={props.image} alt="" />
     <div class="card-body">
       <h5 className="card-title">{props.title}</h5>

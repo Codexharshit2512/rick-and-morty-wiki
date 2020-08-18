@@ -5,9 +5,9 @@ const Season = (props) => (
     <div className="front">
       <h3>{props.season}</h3>
     </div>
-    <div className="back">
+    {/* <div className="back">
       <a href="#">View</a>
-    </div>
+    </div> */}
   </div>
 );
 

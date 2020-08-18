@@ -4,7 +4,7 @@ import character from "./character";
 
 const CardSection = () => (
   <div className="container">
-    <h1 className="display-4 text-center" style={{ color: "black" }}>
+    <h1 className="display-4 text-center" style={{ color: "white" }}>
       Characters
     </h1>
     <div className="characters">
