@@ -14,71 +14,71 @@
     
 }
 
-.season-item{
-    perspective: 100px;
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-}
+// .season-item{
+//     perspective: 100px;
+//     display: flex;
+//     flex-direction: column;
+//     height: 300px;
+// }
 
-.season-item:hover .back{
-    transform: rotateY(0);
-}
+// .season-item:hover .back{
+//     transform: rotateY(0);
+// }
 
-.season-item:nth-child(even){
-    margin-left: 10px;
-}
+// .season-item:nth-child(even){
+//     margin-left: 10px;
+// }
 
-.front{
-    flex: 8;
-    padding: 1rem;
-    cursor: default;
-    border: 3px solid floralwhite;
-    background-color: black;
-    position: relative;
-    z-index: 999;
-    text-align: center;
+// .front{
+//     flex: 8;
+//     padding: 1rem;
+//     cursor: default;
+//     border: 3px solid floralwhite;
+//     background-color: black;
+//     position: relative;
+//     z-index: 999;
+//     text-align: center;
     
-}
+// }
 
-.front h3{
-    font-size: 30px;
-    color: floralwhite;
-}
+// .front h3{
+//     font-size: 30px;
+//     color: floralwhite;
+// }
 
-.back{
-    flex: 2;
-    padding: 1rem;
-    font-size: 20px;
-    color: #d3d3d3;
-    cursor: pointer;
-    border: 3px solid floralwhite;
-    border-left-width: 1.5px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform-origin: top;
-    transform: rotateX(-90deg);
-    transition: transform 800ms ease-out,background-color 500ms ease-out;
-}
+// .back{
+//     flex: 2;
+//     padding: 1rem;
+//     font-size: 20px;
+//     color: #d3d3d3;
+//     cursor: pointer;
+//     border: 3px solid floralwhite;
+//     border-left-width: 1.5px;
+//     text-align: center;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     transform-origin: top;
+//     transform: rotateX(-90deg);
+//     transition: transform 800ms ease-out,background-color 500ms ease-out;
+// }
 
 
 
-.back:hover{
-    background-color:rgba($color: #bdffff, $alpha: 1.0);
-}
+// .back:hover{
+//     background-color:rgba($color: #bdffff, $alpha: 1.0);
+// }
 
-.back a{
-    transform: rotate(0);
-    transition: transform 300ms ease-in;
-    color:#d3d3d3;
-    text-decoration: none;
-}
+// .back a{
+//     transform: rotate(0);
+//     transition: transform 300ms ease-in;
+//     color:#d3d3d3;
+//     text-decoration: none;
+// }
 
-.back:hover a{
-    color: #444444;
-    transform: rotateZ(360deg);
-}
+// .back:hover a{
+//     color: #444444;
+//     transform: rotateZ(360deg);
+// }
 
 

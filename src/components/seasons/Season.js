@@ -1,12 +1,12 @@
 import React from "react";
 
 const Season = (props) => (
-  <div className="season-item col-md-2 col-5">
-    <div className="front">
-      <h3>{props.season}</h3>
-    </div>
-    <div className="back">
-      <a href="#">View</a>
+  <div className="col-md-2 col-12">
+    <div class="card bg-dark text-white season-item">
+      <img class="card-img" src="../../images/bg.png" alt="" />
+      <div class="card-img-overlay">
+      <h4 class="card-title">{props.season}</h4>
+      </div>
     </div>
   </div>
 );
