@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d81dff9ced70af75628e4e6b574acbe3",
+    "revision": "d56b6c0a2c46a86be62ecba50f470eff",
     "url": "/rick-and-morty-wiki/index.html"
   },
   {
-    "revision": "7ff99204c10f0e2c04ee",
+    "revision": "ad0097f9c40a54b07a49",
     "url": "/rick-and-morty-wiki/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "0a405cc9c21a9a66d07a",
+    "revision": "16484017f0f581cc859e",
     "url": "/rick-and-morty-wiki/static/css/main.cb4dba17.chunk.css"
   },
   {
-    "revision": "7ff99204c10f0e2c04ee",
-    "url": "/rick-and-morty-wiki/static/js/2.943b17ab.chunk.js"
+    "revision": "ad0097f9c40a54b07a49",
+    "url": "/rick-and-morty-wiki/static/js/2.1c23170a.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/rick-and-morty-wiki/static/js/2.943b17ab.chunk.js.LICENSE.txt"
+    "url": "/rick-and-morty-wiki/static/js/2.1c23170a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0a405cc9c21a9a66d07a",
-    "url": "/rick-and-morty-wiki/static/js/main.861c4e32.chunk.js"
+    "revision": "16484017f0f581cc859e",
+    "url": "/rick-and-morty-wiki/static/js/main.877ee0c0.chunk.js"
   },
   {
     "revision": "934c01adb03e3a34aa33",
