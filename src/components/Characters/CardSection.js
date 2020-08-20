@@ -3,7 +3,7 @@ import Card from "./Card";
 import character from "./character";
 
 const CardSection = () => (
-  <div className="container">
+  <div className="card-section container">
     <h1
       className="display-4 text-center"
       style={{ color: "white", marginTop: 20 }}

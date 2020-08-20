@@ -3,6 +3,7 @@
   width: 100vw;
   background-image: url("../../../images/bg.png");
   background-size: cover;
+  box-shadow: 1px 1px 15px #97CE4C;
   @media (max-width: $desktop-breakpoint) {
     background-position: center;
   }
