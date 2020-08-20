@@ -3,9 +3,9 @@ import '../styles/components/errorPage/error.scss';
 
 const ErrorPage = ()=>{
     return(
-    <div classname="error">
-        <h2 className="main-heading">ERROR 404: SOURCE NOT FOUND</h2>
-        <p>OOPS1 LOOKS LIKE YOU'VE ENTERED THE WRONG DIMENSION</p>
+    <div className="error">
+        <h2 className="main-heading">404</h2>
+        <p>OOPS! LOOKS LIKE YOU'VE ENTERED THE WRONG DIMENSION</p>
     </div>
     )}
 
