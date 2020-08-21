@@ -38,7 +38,7 @@ const MainCarousel = () => {
       <img
         className="carousel-img"
         src={quote.image}
-        alt="image"
+        alt="quotes on rick and morty"
       />
       <CarouselCaption captionHeader={quote.quote} />
     </CarouselItem>

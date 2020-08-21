@@ -8,11 +8,11 @@ import Hr from "../components/Hr";
 const LandingPage = () => (
   <>
     <MainLanding />
-    {/* <Hr /> */}
+    <Hr />
     <CardSection />
-    {/* <Hr /> */}
+    <Hr />
     <SeasonContainer />
-    {/* <Hr /> */}
+    <Hr />
     <MainCarousel />
   </>
 );
