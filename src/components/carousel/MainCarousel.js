@@ -46,7 +46,6 @@ const MainCarousel = () => {
 
   return (
     <div className="main-carousel">
-      <h3 className="display-4">Quotes</h3>
       <div className="carousel-container">
         <Carousel
           activeIndex={activeIndex}
