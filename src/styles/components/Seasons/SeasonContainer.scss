@@ -8,21 +8,19 @@
   align-items: center;
   position: relative;
   overflow-x: hidden;
-  box-shadow: 1px 1px 15px #97CE4C;
-  .season-heading{
+  // box-shadow: 1px 1px 15px #97CE4C;
+  .season-heading {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     padding-top: 1rem;
   }
-  
+
   @media (max-width: $desktop-breakpoint) {
     height: auto;
   }
 }
-
-
 
 .season-item-container {
   margin: 0;
@@ -32,15 +30,14 @@
 }
 
 .season-item {
+  .card {
+    height: 300px !important;
+    width: 200px !important;
+    transition: transform 400ms ease-in-out;
 
-  .card{
-     height: 300px !important;
-     width: 200px !important;
-     transition:transform 400ms ease-in-out;
-
-     &:hover{
-         transform: scale(1.3);
-     }
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 
   @media (max-width: $desktop-breakpoint) {
@@ -48,4 +45,3 @@
     justify-content: center;
   }
 }
-
