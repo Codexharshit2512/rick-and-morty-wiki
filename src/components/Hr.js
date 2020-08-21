@@ -5,7 +5,7 @@ const Hr = () => (
     <hr
       style={{
         height: 2,
-        backgroundColor: "#343a40",
+        backgroundColor: "#a7d129",
         borderWidth: 2,
         margin: 0,
         padding: 0,
