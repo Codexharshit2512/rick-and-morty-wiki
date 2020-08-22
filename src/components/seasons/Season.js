@@ -1,14 +1,17 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
-const Season = (props) => (
-  <div className="col-md-3 col-12 season-item">
-    <div class="card bg-dark text-white">
-      <img class="card-img" src="../../images/bg.png" alt="" />
-      <div class="card-img-overlay">
-       <h4 class="card-title text-center">{props.season}</h4>
+const Season = ({season}) => (
+  <Link to={`/seasons/${season.id}`} >
+    <div className="col-md-3 col-12 season-item">
+      <div className="card text-white">
+        <img className="card-img" src={season.image} style={{height:'100%'}} alt={`rick and morty ${season.title}`} />
+        <div className="card-img-overlay">
+          <h4 className="card-title text-center" style={{color:'white'}}>{season.title}</h4>
+        </div>
       </div>
     </div>
-  </div>
+  </Link>
 );
 
 export default Season;
