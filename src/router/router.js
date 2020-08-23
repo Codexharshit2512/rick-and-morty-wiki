@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from "../screens/LandingPage";
 import CharacterPage from "../screens/CharacterPage";
-import ErrorPage from "../components/ErrorPage";
+import SeasonPage from '../screens/SeasonPage.js';
 
 const routes = (
   <Router>
@@ -10,7 +10,7 @@ const routes = (
       <Switch>
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/characters" component={CharacterPage} />
-        <Route component = {ErrorPage}/>
+        <Route exact path="/seasons/:id" component={SeasonPage} />   
       </Switch>
     </div>
   </Router>

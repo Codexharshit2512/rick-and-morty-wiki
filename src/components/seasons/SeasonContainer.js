@@ -10,9 +10,9 @@ const SeasonContainer = () => {
           Seasons
         </h1>
       </div>
-      <div className="season-item-container row ">
+      <div className="season-item-container row justify-content-center">
         {seasons.map((season, index) => (
-          <Season season={season} key={season} />
+          <Season season={season} key={season.id} />
         ))}
       </div>
     </div>
