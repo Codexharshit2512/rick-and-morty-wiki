@@ -1,5 +1,5 @@
 import karan from "../../images/karan.png"
-import manan from "../../images/manan.JPG"
+import manan from "../../images/manan.png"
 import harshit from "../../images/harshit.jpg"
 
 
