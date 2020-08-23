@@ -1,5 +1,5 @@
 import React from 'react';
-import rick from '../../images/rick.jpg';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub,faInstagram,faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 
