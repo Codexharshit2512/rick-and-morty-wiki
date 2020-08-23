@@ -11,7 +11,7 @@ const SeasonContainer = () => {
         </h1>
       </div>
       <div className="season-item-container row justify-content-center">
-        {seasons.map((season, index) => (
+        {seasons.map((season) => (
           <Season season={season} key={season.id} />
         ))}
       </div>
