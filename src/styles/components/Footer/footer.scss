@@ -1,16 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap');
+
 .footer{
     background-image:url("../../../images/FooterImage.png");
     background-position:center;
     background-size: cover;
-    height: 40vh;
+    height: 50vh;
     color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
     
 
 }
 
-.desc{
-    width:40vw;
-    margin-left:900px;
+
+
+.motto{
+    margin-left:185px;
     padding-top:100px;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 3.5rem;
+    align-self: center;
+}
+
+.titleImage{
+    width: 380px;
+    padding-left: 90px;
+}
+
+
+
+.descContainer{
+    align-self: center;
+    padding-left:550px;
+    
     
 }
