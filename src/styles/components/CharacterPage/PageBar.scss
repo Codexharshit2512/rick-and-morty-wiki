@@ -1,0 +1,25 @@
+// .pagination {
+//   display: flex;
+//   padding-left: 0;
+//   list-style: none;
+//   border-radius: 0.25rem;
+// }
+
+.MuiPaginationItem-root {
+  color: #a7d129 !important;
+  background-color: #3e432e !important;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.MuiPagination-ul button:focus {
+  background-color: #a7d129 !important;
+  color: white !important;
+  outline: none;
+}
+
+// <button class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected" tabindex="0" type="button" aria-current="true" aria-label="page 1">1<span class="MuiTouchRipple-root"></span></button>
