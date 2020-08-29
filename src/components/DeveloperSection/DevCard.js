@@ -14,7 +14,7 @@ const DevCard=(props)=>(
 
   
   
-    <div className="card">
+    <div className="card" style={{backgroundColor:'black'}}>
     <img className="card-img-top" src={props.img} alt="" />
     <div className="card-body">
 <h5 className="card-title">{props.name}</h5>
