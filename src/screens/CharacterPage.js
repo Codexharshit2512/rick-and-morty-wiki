@@ -2,29 +2,29 @@ import React, { useState } from "react";
 import instance from "../config/configuration";
 import Card from "../components/Characters/Card";
 import PageBar from "../components/CharacterPage/PageBar";
-import CharacterFilter from '../components/CharacterPage/CharacterFilter';
-import Loader from '../components/loader/Loader';
-
+import CharacterFilter from "../components/CharacterPage/CharacterFilter";
+import Loader from "../components/loader/Loader";
 
 const CharacterPage = (props) => {
   const [characters, setCharacters] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(undefined);
   // const [isLoading,setLoading] = useState(true);
-  const [filters,setFilters]=useState([]);
+  const [filters, setFilters] = useState([]);
 
   React.useEffect(() => {
-    let filterStr=``,current;
-    if(filters.length===0) filterStr=``;
-    else{
-      filters.forEach(filter => {
-        if(filter.value) filterStr+=`&${filter.type}=${filter.value}`;
-      })
+    let filterStr = ``,
+      current;
+    if (filters.length === 0) filterStr = ``;
+    else {
+      filters.forEach((filter) => {
+        if (filter.value) filterStr += `&${filter.type}=${filter.value}`;
+      });
     }
     // setLoading(true);
-    console.log(currentPage);
-    if(!currentPage) current=1;
-    else current=currentPage;
+    console.log("henlo", currentPage);
+    if (!currentPage) current = 1;
+    else current = currentPage;
     instance
       .get(`character/?page=${current}${filterStr}`)
       .then((Response) => {
@@ -36,14 +36,13 @@ const CharacterPage = (props) => {
       .catch((error) => {
         console.log(error);
       });
-  }, [currentPage]);
-
+  }, [currentPage, filters]);
 
   const setPage = (page) => {
     setCurrentPage(page);
   };
 
-  const changeFilter = async (arr) =>{
+  const changeFilter = async (arr) => {
     setFilters(arr);
     setCurrentPage(1);
   };
@@ -60,20 +59,20 @@ const CharacterPage = (props) => {
       {/* {isLoading ?( 
       <Loader />) 
         :( */}
-        <> 
-          <div className="row card-spacing">
-            {characters.map((character) => {
-              const { name, image, species, id } = character;
-              return (
-                <div className="col-sm col-lg-4 col-md-2" key={id}>
-                  <Card title={name} image={image} description={species} />
-                </div>
-              );
-            })}
-          </div>
-          <PageBar pageNo={totalPages} setPage={setPage} />
-        </>
-        {/* )
+      <>
+        <div className="row card-spacing">
+          {characters.map((character) => {
+            const { name, image, species, id } = character;
+            return (
+              <div className="col-sm col-lg-4 col-md-2" key={id}>
+                <Card title={name} image={image} description={species} />
+              </div>
+            );
+          })}
+        </div>
+        <PageBar pageNo={totalPages} setPage={setPage} />
+      </>
+      {/* )
     } */}
     </div>
   );

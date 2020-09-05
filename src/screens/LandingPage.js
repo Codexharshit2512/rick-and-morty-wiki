@@ -14,10 +14,10 @@ const LandingPage = () => (
     <CardSection />
     <Hr />
     <SeasonContainer />
-    <Hr />
+    {/* <Hr /> */}
     <MainCarousel />
-    <Hr />
-    <DevSection />
+    {/* <Hr />
+    <DevSection /> */}
     <Hr />
     <Footer />
   </>

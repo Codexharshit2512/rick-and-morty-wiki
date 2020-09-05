@@ -1,38 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap');
-
-.footer{
-    background-image:url("../../../images/FooterImage.png");
-    background-position:center;
-    background-size: cover;
-    height: 50vh;
-    color:white;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    
-
+.footer {
+  //   background-image: url("../../../images/FooterImage.png");
+  //   background-position: center;
+  //   background-size: cover;
+  background-color: #262626;
+  height: 80vh;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  @media (max-width: $desktop-breakpoint) {
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+  }
 }
 
-
-
-.motto{
-    margin-left:185px;
-    padding-top:100px;
-    font-family: 'Londrina Solid', cursive;
-    font-size: 3.5rem;
-    align-self: center;
+.footerImg {
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+  margin: 0 auto;
+  display: block;
 }
 
-.titleImage{
-    width: 380px;
-    padding-left: 90px;
+.image-container {
+  width: 40vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: $desktop-breakpoint) {
+    margin-top: 20px;
+    order: 2;
+    width: 100vw;
+  }
 }
 
-
-
-.descContainer{
-    align-self: center;
-    padding-left:550px;
-    
-    
+.description {
+  width: 40vw;
+  @media (max-width: $desktop-breakpoint) {
+    width: 100vw;
+    order: 1;
+  }
 }
