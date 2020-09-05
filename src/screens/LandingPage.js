@@ -5,6 +5,7 @@ import SeasonContainer from "../components/seasons/SeasonContainer";
 import MainCarousel from "../components/carousel/MainCarousel";
 import Hr from "../components/Hr";
 import DevSection from "../components/DeveloperSection/DevSection";
+import Footer from "../components/Footer/Footer";
 
 const LandingPage = () => (
   <>
@@ -17,6 +18,8 @@ const LandingPage = () => (
     <MainCarousel />
     <Hr />
     <DevSection />
+    <Hr />
+    <Footer />
   </>
 );
 
