@@ -6,8 +6,8 @@ const Footer = () => (
     <div className="image-container">
       <img src={footer} alt="Rick and morty footer" className="footerImg" />
 
-      <p style={{ marginTop: 20 }}>
-        Designed and developed by Harshit, Karan and Manan.
+      <p  style={{ marginTop: 20, textAlign:'center' }}>
+        Designed and developed by  <a href="#">Harshit</a>, <a href="#">Karan</a> and <a href="#" >Manan</a>. 
       </p>
     </div>
     <div className="description">
