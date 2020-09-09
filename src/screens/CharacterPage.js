@@ -9,7 +9,7 @@ const CharacterPage = (props) => {
   const [characters, setCharacters] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(undefined);
-  // const [isLoading,setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(true);
   const [filters, setFilters] = useState([]);
 
   React.useEffect(() => {
@@ -21,14 +21,13 @@ const CharacterPage = (props) => {
         if (filter.value) filterStr += `&${filter.type}=${filter.value}`;
       });
     }
-    // setLoading(true);
-    console.log("henlo", currentPage);
+    setLoading(true);
     if (!currentPage) current = 1;
     else current = currentPage;
     instance
       .get(`character/?page=${current}${filterStr}`)
       .then((Response) => {
-        // setLoading(false);
+        setLoading(false);
         setCharacters(Response.data.results);
         // console.log(Response.data);
         setTotalPages(Response.data.info.pages);
@@ -56,24 +55,23 @@ const CharacterPage = (props) => {
         Characters
       </h4>
       <CharacterFilter filters={filters} setFilters={changeFilter} />
-      {/* {isLoading ?( 
-      <Loader />) 
-        :( */}
-      <>
-        <div className="row card-spacing">
-          {characters.map((character) => {
-            const { name, image, species, id } = character;
-            return (
-              <div className="col-sm col-lg-4 col-md-2" key={id}>
-                <Card title={name} image={image} description={species} />
-              </div>
-            );
-          })}
-        </div>
-        <PageBar pageNo={totalPages} setPage={setPage} />
-      </>
-      {/* )
-    } */}
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          <div className="row card-spacing">
+            {characters.map((character) => {
+              const { name, image, species, id } = character;
+              return (
+                <div className="col-sm col-lg-4 col-md-2" key={id}>
+                  <Card title={name} image={image} description={species} />
+                </div>
+              );
+            })}
+          </div>
+          <PageBar pageNo={totalPages} setPage={setPage} />
+        </>
+      )}
     </div>
   );
 };

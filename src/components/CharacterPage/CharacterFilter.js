@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MobileFilter from "./MobileFilter";
 import { filters } from "./filters";
 
 const CharacterFilter = ({ setFilters }) => {
@@ -52,7 +53,7 @@ const CharacterFilter = ({ setFilters }) => {
     }
   };
 
-  return (
+  const defaultFilters = () => (
     <div className="filter-form">
       <form onSubmit={handleSubmit}>
         <div className="name input">
@@ -103,14 +104,21 @@ const CharacterFilter = ({ setFilters }) => {
         </div>
         <div className="submit-btn">
           <button type="submit">Filter</button>
-        </div>
-        <div className="delete-filters">
-          <div onClick={deleteFilters}>
-            <span className="fas fa-times"></span>
+          <div className="delete-filters">
+            <div onClick={deleteFilters}>
+              <span className="fas fa-times"></span>
+            </div>
           </div>
         </div>
       </form>
     </div>
+  );
+
+  return (
+    <>
+      <div className="desktop-filters">{defaultFilters()}</div>
+      <MobileFilter defaultFilters={defaultFilters} />
+    </>
   );
 };
 

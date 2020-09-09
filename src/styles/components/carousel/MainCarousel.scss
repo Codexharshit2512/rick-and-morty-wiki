@@ -1,5 +1,5 @@
 .main-carousel {
-  height: 100vh;
+  height: 70vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -10,14 +10,14 @@
 .carousel-container {
   margin-top: 1rem;
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
 }
 
 .carousel-img {
   position: relative !important;
   // filter: blur(1.5px);
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
 }
 
 .carousel-caption {
