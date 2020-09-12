@@ -8,7 +8,7 @@ import Loader from "../components/loader/Loader";
 const CharacterPage = (props) => {
   const [characters, setCharacters] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
-  const [currentPage, setCurrentPage] = useState(undefined);
+  const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setLoading] = useState(true);
   const [filters, setFilters] = useState([]);
 
@@ -29,7 +29,7 @@ const CharacterPage = (props) => {
       .then((Response) => {
         setLoading(false);
         setCharacters(Response.data.results);
-        // console.log(Response.data);
+        console.log(Response.data);
         setTotalPages(Response.data.info.pages);
       })
       .catch((error) => {
@@ -69,7 +69,11 @@ const CharacterPage = (props) => {
               );
             })}
           </div>
-          <PageBar pageNo={totalPages} setPage={setPage} />
+          <PageBar
+            currentPage={currentPage}
+            pageNo={totalPages}
+            setPage={setPage}
+          />
         </>
       )}
     </div>

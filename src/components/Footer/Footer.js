@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import footer from "../../images/footer.jpg";
 
 const Footer = () => (
@@ -6,8 +6,9 @@ const Footer = () => (
     <div className="image-container">
       <img src={footer} alt="Rick and morty footer" className="footerImg" />
 
-      <p  style={{ marginTop: 20, textAlign:'center' }}>
-        Designed and developed by  <a href="#">Harshit</a>, <a href="#">Karan</a> and <a href="#" >Manan</a>. 
+      <p style={{ marginTop: 20, textAlign: "center" }}>
+        Designed and developed by <a href="#">Harshit</a>, <a href="#">Karan</a>{" "}
+        and <a href="#">Manan</a>.
       </p>
     </div>
     <div className="description">
