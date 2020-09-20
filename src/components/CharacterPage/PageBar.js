@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Pagination from "@material-ui/lab/Pagination";
 
 export default function PaginationControlled(props) {
   const [page, setPage] = React.useState(1);
-  React.useEffect(() => {
-    props.setPage(page);
-  }, [page]);
+  useEffect(() => {
+    setPage(props.currentPage);
+    console.log("hello");
+  }, [props]);
+
   const handleChange = (event, value) => {
-    setPage(value);
+    props.setPage(value);
   };
 
   return (

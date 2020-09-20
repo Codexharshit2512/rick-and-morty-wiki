@@ -32,9 +32,6 @@
   .card {
     height: 300px !important;
     width: 200px !important;
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover !important;
     transition: transform 400ms ease-in-out;
 
     &:hover {
@@ -45,5 +42,11 @@
   @media (max-width: $desktop-breakpoint) {
     display: flex;
     justify-content: center;
+
+    .card {
+      &:hover {
+        transform: none;
+      }
+    }
   }
 }

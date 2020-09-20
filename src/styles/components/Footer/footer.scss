@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap");
+.footer {
+  //   background-image: url("../../../images/FooterImage.png");
+  //   background-position: center;
+  //   background-size: cover;
+  background-color: black;
+  height: 80vh;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Grandstander", cursive;
+  width: 100vw;
+  @media (max-width: $desktop-breakpoint) {
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+  }
+}
+
+.footerImg {
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.image-container {
+  width: 40vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: $desktop-breakpoint) {
+    margin-top: 20px;
+    order: 2;
+    width: 100vw;
+  }
+}
+
+.description {
+  width: 40vw;
+  @media (max-width: $desktop-breakpoint) {
+    width: 100vw;
+    order: 1;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a7d129;
+  text-decoration: none;
+}

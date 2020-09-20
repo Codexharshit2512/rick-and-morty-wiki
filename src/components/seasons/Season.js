@@ -11,7 +11,7 @@ const Season = ({ season }) => (
           style={{ height: "100%" }}
           alt={`rick and morty ${season.title}`}
         />
-        <div className="card-img-overlay">
+        <div className="card-body">
           <h4 className="card-title text-center" style={{ color: "white" }}>
             {season.title}
           </h4>

@@ -1,0 +1,116 @@
+.mobile-filter-container {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .mobile-filter-container {
+    display: block;
+    border-top: 1px solid #a7d129;
+    border-bottom: 1px solid #a7d129;
+    padding: 5px 0;
+    margin-top: 1rem;
+    .heading-container {
+      display: flex;
+      padding: 0 15px;
+      h2 {
+        font-size: 21px;
+        color: #d3d3d3;
+        font-weight: 400;
+      }
+      .open-btn {
+        margin-left: auto;
+        span {
+          cursor: pointer;
+        }
+        svg {
+          color: #969696;
+        }
+      }
+    }
+
+    .filter-form form {
+      display: flex;
+      animation: appear 300ms ease-in-out forwards;
+      flex-direction: column;
+      padding-top: 7px;
+      .input {
+        input,
+        select {
+          width: 100%;
+          margin-bottom: 12px;
+          padding: 5px 10px;
+          border-radius: 4px;
+          background: none;
+          border: 1px solid #a7d129;
+          color: floralwhite;
+          &:focus {
+            color: #a7d129;
+          }
+        }
+      }
+
+      .status-select,
+      .gender-select {
+        width: 100%;
+        outline: #a7d129;
+        option {
+          background-color: gray;
+          color: floralwhite;
+        }
+      }
+
+      .submit-btn {
+        display: flex;
+        button {
+          width: 80%;
+          text-align: center;
+          padding: 5px;
+          color: white;
+          background-color: #a7d129;
+          border-radius: 5px;
+          border: none;
+          transition: background-color 500ms;
+
+          &:hover {
+            background-color: grey;
+            // transition-duration: 500ms;
+          }
+        }
+      }
+
+      .delete-filters {
+        div {
+          padding: 5px;
+          text-align: center;
+          background-color: grey;
+          width: 40px;
+          margin: 0 auto;
+          border-radius: 6px;
+
+          &:hover {
+            background-color: #6e6e6e;
+            transition: background-color 500ms;
+          }
+        }
+
+        span {
+          color: floralwhite;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes appear {
+  from {
+    // opacity: 0;
+    height: 0;
+    // width: 0;
+  }
+  to {
+    // opacity: 1;
+    height: 234px;
+    // width: auto;
+  }
+}
