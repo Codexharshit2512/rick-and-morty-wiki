@@ -1,0 +1,28 @@
+.quiz_result-container {
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    color: white;
+  }
+
+  button {
+    margin-top: 2rem;
+    background: none;
+    border: 2px solid #a7d129;
+    color: #a7d129;
+    border-radius: 10px;
+    padding: 6px 3rem;
+    box-shadow: inset 1px 1px 4px black;
+    font-weight: 600;
+
+    &:hover {
+      box-shadow: none;
+      background: #a7d129;
+      color: floralwhite;
+      transition: background 400ms ease-in-out;
+    }
+  }
+}

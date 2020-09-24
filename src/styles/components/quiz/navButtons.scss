@@ -1,0 +1,25 @@
+.control-btn {
+  cursor: pointer;
+
+  .MuiSvgIcon-root {
+    font-size: 2.4rem;
+    fill: floralwhite;
+    transition: fill 200ms ease-in;
+    cursor: pointer;
+    &:hover {
+      fill: #a7d129;
+    }
+  }
+}
+
+.next-btn {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+}
+
+.prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+}

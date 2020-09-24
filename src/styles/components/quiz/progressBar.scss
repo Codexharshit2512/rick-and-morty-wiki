@@ -1,0 +1,13 @@
+.progress-bar-container {
+  height: 8px;
+  // background-color: floralwhite;
+  border-radius: 20px;
+  margin-bottom: 1.4rem;
+  .progress-bar {
+    background-color: #a7d129;
+    box-shadow: 0.5px 0.5px 5px grey;
+    height: 8px;
+    border-radius: 20px;
+    transition: width 500ms ease-in-out;
+  }
+}
